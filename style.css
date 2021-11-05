@@ -1,0 +1,292 @@
+* {
+  box-sizing: border-box;
+}
+aside {
+  width: 40%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+
+  background-color: rgb(124, 106, 10, 0.8);
+  height: 1500px; /* Should be removed. Only for demonstration */
+  overflow: auto;
+  overflow-y: scroll;
+  border-radius: 10px;
+
+  box-shadow: #7c6a0a 0px 5px 15px;
+}
+
+aside h2 {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-style: italic;
+  font-style: bold;
+}
+
+aside a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+aside a:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #7c6a0a;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+aside a:hover {
+  transition: 0.5s;
+  font-weight: 900;
+}
+aside a:hover:after {
+  width: 50%;
+  left: 0;
+}
+
+h1 {
+  font-family: italic;
+  color: #7c6a0a;
+  text-align: center;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #ffff;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #7c6a0a;
+}
+
+button {
+  background-color: rgb(124, 106, 10, 0.8);
+  display: inline-block;
+  padding: 0.5em 3em;
+  border-width: 5px 5px 5px 5px;
+  border-color: #fff;
+  font-size: 20px;
+  border-style: double;
+  border-radius: 10px;
+  margin: 0.3em 0.3em 0.3em 0.3em;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  transition: all 0.15s;
+  position: relative;
+  cursor: pointer;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background: #ffdac6;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+  background: #ffdac6;
+  overflow: auto;
+}
+ul {
+  padding: 0;
+  margin-left: 500px;
+  list-style: none;
+}
+
+li {
+  float: left;
+}
+
+nav a {
+  width: 100px;
+  display: block;
+  padding: 20px 15px;
+  font-family: italic;
+  color: #7c6a0a;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+nav a:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #7c6a0a;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.topnav {
+  margin-right: -900px;
+}
+.topnav a {
+  font-size: 30px;
+  margin-right: 10px;
+  margin-top: -20px;
+}
+
+nav a:hover {
+  background: #ffdac6;
+  transition: 0.5s;
+  font-weight: 900;
+}
+nav a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.login a {
+  color: #7c6a0a;
+}
+
+.login a:hover {
+  color: #7c6a0a;
+  text-decoration: none;
+  font-weight: 900;
+}
+.active img {
+  position: relative;
+  margin: 0 0 0 0;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  position: relative;
+  width: 25%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  padding: 10px;
+  height: 200px;
+  background: #ffdac6;
+  box-shadow: #7c6a0a 0px 5px 15px;
+  border-width: 5px 5px 5px 5px;
+  border-color: #7c6a0a;
+  border-style: double;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+h2 {
+  color: #7c6a0a;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  width: 60%;
+  display: table;
+  clear: both;
+}
+
+.topnav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 7px 10px;
+  background: #ffdac6;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.search-container {
+  float: right;
+  position: absolute;
+}
+
+.search-container input[type="text"] {
+  padding: 20px 15px;
+  border: solid;
+  border-radius: 10px;
+  border-color: #fff;
+  border-width: 3px;
+  font-size: 17px;
+  width: 70%;
+  background: rgb(124, 106, 10, 0.8);
+}
+.search-container input[type="text"]::-webkit-input-placeholder {
+  color: #f8fafc;
+}
+.search-container input[type="text"]:hover {
+  background: #7c6a0a;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.topnav .search-container button {
+  padding: 20px 15px;
+  background: rgb(124, 106, 10, 0.8);
+  font-size: 17px;
+  border: solid;
+  border-radius: 10px;
+  margin-left: -9px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+a {
+  float: left;
+  position: relative;
+  width: 50%;
+  padding: 10px;
+  background-attachment: fixed;
+}
+
+.footer {
+  position: relative;
+  justify-content: center;
+  font-size: 1pc;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(124, 106, 10, 0.8);
+  height: 60;
+  width: 100vw;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #ffdac6;
+}
+
+.footer ul {
+  display: flex;
+  float: center;
+}
+
+.footer ul li {
+  padding-left: 20px;
+  justify-content: center;
+  display: block;
+}
+
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  color: #ffdac6;
+}
